@@ -12,7 +12,7 @@
 		./hardware/amd/ryzen.nix
 		./hardware/intel.nix
 		./hardware/laptop.nix
-		./hardware/mounts.nix # Disks to mount on startup
+		# ./hardware/mounts.nix # Disks to mount on startup.
 		./hardware/nvidia.nix
 		./hardware/virtualisation.nix
 		./system/desktop
@@ -22,5 +22,5 @@
 		./system/users
 	];
 
-	config.system.stateVersion = "22.05"; # Do not change without checking the docs
+	config.system.stateVersion = "22.11"; # Do not change without checking the docs
 }

@@ -4,7 +4,7 @@
 	options = {
 		mounts.enable = lib.mkOption {
 			type = lib.types.bool;
-			default = true;
+			default = false;
 		}; # Set to false if hardware/mounts.nix is not correctly configured
 
 		boot = {
@@ -57,23 +57,23 @@
 
 			username = lib.mkOption {
 				type = lib.types.str;
-				default = "icedborn";
+				default = "cellis";
 			};
 
 			description = lib.mkOption {
 				type = lib.types.str;
-				default = "IceDBorn";
+				default = "Alexander Sellström";
 			};
 
 			github = {
 				username = lib.mkOption {
 					type = lib.types.str;
-					default = "IceDBorn";
+					default = "rednaxela5950";
 				};
 
 				email = lib.mkOption {
 					type = lib.types.str;
-					default = "github.envenomed@dralias.com";
+					default = "alexander@sellstrom.me";
 				};
 			};
 		};
@@ -97,12 +97,12 @@
 			github = {
 				username = lib.mkOption {
 					type = lib.types.str;
-					default = "IceDBorn";
+					default = "rednaxela5950";
 				};
 
 				email = lib.mkOption {
 					type = lib.types.str;
-					default = "github.envenomed@dralias.com";
+					default = "alexander@sellstrom.me";
 				};
 			};
 		};
@@ -110,7 +110,7 @@
 		amd = {
 			gpu.enable = lib.mkOption {
 				type = lib.types.bool;
-				default = true;
+				default = false;
 			};
 
 			cpu = {
@@ -122,7 +122,7 @@
 				undervolt = {
 					enable = lib.mkOption {
 						type = lib.types.bool;
-						default = true;
+						default = false;
 					};
 
 					value = lib.mkOption {
@@ -136,7 +136,7 @@
 		nvidia = {
 			enable = lib.mkOption {
 				type = lib.types.bool;
-				default = false;
+				default = true;
 			};
 
 			power-limit = {
@@ -147,7 +147,7 @@
 
 				value = lib.mkOption {
 					type = lib.types.str;
-					default = "242"; # RTX 3070
+					default = "216"; # GTX 1080 maybe? FIXME: Resarch this.
 				};
 			};
 
